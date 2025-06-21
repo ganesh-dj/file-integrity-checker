@@ -1,6 +1,6 @@
 # 🛡️ File Integrity Checker using Python
 
-**Developed by: _[Praveen Vinod]_**
+**Developed by: [D.J.Ganesh]
 
 ⚠️ _This project is intended for educational and research use only. Ensure that it is used ethically and within authorized environments._
 
