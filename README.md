@@ -1,103 +1,122 @@
-# 🛡️ File Integrity Checker using Python
+# 🛡️ File Integrity Checker
 
-**Developed by: [D.J.Ganesh]
-
-⚠️ _This project is intended for educational and research use only. Ensure that it is used ethically and within authorized environments._
+A Python-based tool to detect file tampering, modifications, deletions, and additions using SHA-512 cryptographic hashing.
 
 ---
 
-## 📌 Overview
+## 🔖 Developed By
 
-The **File Integrity Checker** is a simple yet effective Python tool that uses **SHA-512** hashing to monitor the integrity of files in a directory. It helps detect:
-
-- 🟡 **Newly added files**
-- 🔴 **Modified files**
-- 🟣 **Deleted files**
-- 🟢 **Unchanged files**
-
-By comparing current file hashes with a saved baseline, it ensures your files haven’t been tampered with or unintentionally altered.
+- **Name:** D.J. Ganesh  
+- **Intern ID:** CITSOD227  
+- **Company:** CodTech IT Solutions  
+- **Domain:** Cyber Security & Ethical Hacking  
+- **Mentor:** Neela Santosh  
+- **Internship Duration:** 6 Weeks  
 
 ---
 
-## 🔍 Key Features
+## 📌 About the Project
 
-- ✅ Generate SHA-512 hash baseline of all files in a folder
-- ✅ Detect changes by comparing current hashes to the baseline
-- ✅ Logs results to `integrity_log.txt` for future auditing
-- ✅ Uses **`colorama`** to color-code file status in terminal output
+This script scans a specified directory and uses cryptographic hashing (SHA-512) to detect any changes in the files. It’s helpful for validating the integrity of critical data and monitoring unauthorized changes.
 
----
+It identifies:
 
-## 🛠️ Installation & Setup
-✅ Prerequisites
-- Python 3.x installed
-
-Required Python modules:
-- hashlib (standard library)
-- colorama (install via pip)
+- 🟡 New files
+- 🔴 Modified files
+- 🟣 Deleted files
+- 🟢 Unchanged files
 
 ---
 
-## 📁 Folder Structure
+## ⚙️ Tech Stack
+
+| Component     | Usage                          |
+|---------------|--------------------------------|
+| `Python 3.x`  | Programming Language            |
+| `hashlib`     | Hashing (standard library)     |
+| `colorama`    | Colored CLI output             |
+| `os, json`    | File handling, data storage    |
+
+---
+
+## 🛠️ Setup & Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/File-Integrity-Checker.git
+cd File-Integrity-Checker
+Install Requirements
+bash
+Copy
+Edit
+pip install colorama
+3. Prepare Files for Monitoring
+Place the files you want to monitor into the /Files/ directory.
+
+🧪 How to Use
+
+Run the Python script:
+
+bash
+Copy
+Edit
+python file_integrity_checker.py
+Choose from the menu options:
+
+mathematica
+Copy
+Edit
+1. Generate Baseline
+2. Check File Integrity
+3. Exit
+Generate Baseline: Creates baseline.txt with current file hashes.
+
+Check File Integrity: Compares current file states with baseline and logs differences.
+
+Exit: Ends the program.
+
+📁 Directory Layout
+
+bash
+Copy
+Edit
 File-Integrity-Checker/
-- Files/                    -># Folder to monitor
- │Subfolder/                -># Nested files supported
-- file_integrity_checker.py -># Main Python script
-- baseline.txt              -># Stores SHA-512 hashes (auto-generated)
-- integrity_log.txt         -># Logs detected changes (auto-generated)
+├── Files/                    # Folder being monitored
+│   └── Subfolder/            # Nested directories supported
+├── file_integrity_checker.py
+├── baseline.txt              # Stores file hashes
+└── integrity_log.txt         # Logs changes after checks
 
---- 
 
-## ⚙️ Usage
+🔐 Security Algorithm Used
 
-**Step 1: Prepare Your Files** 
-- Place the files or folders you want to monitor inside the Files/ directory.
-Example: **File-Integrity-Checker/Files/ your_files_here.txt**
+SHA-512 (Secure Hash Algorithm)
 
-**Step 2: Create Supporting Files** 
-- These files will be automatically created after the program runs:
-1. **baseline.txt:** Stores original hash values (with comment headers).
-2. **integrity_log.txt:** Logs any changes (added, modified, or deleted files)..
+Part of the SHA-2 family
 
-**Step 3: Run the Program** 
-- Open a terminal and execute: **python file_integrity_checker.py**
+Strong resistance to collisions
 
-**Step 4: Choose an Option** 
-- After running the script, you’ll see: Choose an option: 1. Generate baseline 2. Check file integrity 3. Exit
-1. Option 1: Generate Baseline (First Time Setup) - Use this option only once to create a reference (baseline.txt) of your files. This saves the hash of each file for comparison.
-2. Option 2: Check Integrity (Subsequent Runs) - Use this to check if files were: Unchanged, Modified, New, Deleted.
-3. Option 3: Exit
+Ideal for integrity checking and forensic validation
 
----
+📘 Use Cases
 
-## 🔐 Cryptographic Hash Algorithm
-SHA-512
-- Industry-standard from the SHA-2 family
-- Secure and collision-resistant
-- Suitable for verifying data integrity
+🔍 Detect tampering in confidential files
 
----
+📦 Verify backup file consistency
 
-## 🧠 Use Cases
-- 🧩 File tamper detection
-- 🔄 Backup validation
-- 🔐 Secure software deployment checks
-- 🧪 Malware or incident response analysis
+🚀 Confirm post-deployment file integrity
 
----
+🧪 Forensic or incident response scenarios
 
-## ✨ Future Enhancements
-- Add GUI support using Tkinter.
-- Include support for multiple algorithms (SHA-256, MD5).
-- Email alerts on integrity change.
-- Remote hash validation support.
+🌟 Roadmap & Enhancements
 
----
 
-## 📑 Internship Details
+ Add Tkinter GUI for user-friendly interface
 
-- **🏢 Company:** CODTECH IT SOLUTIONS  
-- **🆔 Intern ID:CITSOD227  
-- **📂 Domain:** Cyber Security & Ethical Hacking  
-- **⏳ Duration:** 6 Weeks  
-- **👨‍🏫 Mentor:** Neela Santosh  
+ Add support for SHA-256, MD5
+
+ Send email alerts on file modifications
+
+ Support remote file integrity validation
+
