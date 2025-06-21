@@ -97,7 +97,7 @@ SHA-512
 ## 📑 Internship Details
 
 - **🏢 Company:** CODTECH IT SOLUTIONS  
-- **🆔 Intern ID:**CITSOD227  
+- **🆔 Intern ID:CITSOD227  
 - **📂 Domain:** Cyber Security & Ethical Hacking  
 - **⏳ Duration:** 6 Weeks  
 - **👨‍🏫 Mentor:** Neela Santosh  
