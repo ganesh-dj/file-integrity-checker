@@ -23,6 +23,7 @@ This script scans a specified directory and uses cryptographic hashing (**SHA-51
 
 ## 🔍 Features
 
+
 - ✅ Detects **New**, **Modified**, and **Deleted** files recursively
 - ✅ Uses **SHA-512 hashing** for tamper detection
 - ✅ Color-coded terminal output (`colorama`)
@@ -32,13 +33,18 @@ This script scans a specified directory and uses cryptographic hashing (**SHA-51
 
 ---
 
+
 ## ⚙️ Requirements
+
 
 - Python 3.x  
 - Install dependencies with:
   ```bash
   pip install colorama
+  
 🛠️ Setup
+
+
 Clone the repo
 
 bash
@@ -62,7 +68,9 @@ https://myaccount.google.com/apppasswords
 (Optional) Customize the monitored directory
 Default is ./Files, but you can change it in the code.
 
+
 🚀 Usage
+
 
 Run the script:
 
@@ -84,7 +92,9 @@ Edit
 
 3: Exits the script
 
+
 📁 Output Files
+
 
 integrity_checker.py: Main script
 
@@ -94,7 +104,9 @@ integrity_log.txt: Change logs
 
 ./Files/: Default monitored folder
 
+
 📩 Email Alerts
+
 
 Triggers: File added, modified, or deleted
 
@@ -102,7 +114,9 @@ Email Subject: File Integrity Alert: <Event>
 
 Email Body: Affected file path
 
+
 🔐 Security Tips
+
 
 Do not commit your email credentials to GitHub
 
@@ -110,7 +124,9 @@ Use .env files or OS environment variables for safety
 
 Use TLS with port 587 when using SMTP
 
+
 🧠 Future Enhancements (Ideas)
+
 
 Send daily summary instead of per-event emails
 
