@@ -4,7 +4,9 @@ A robust, color-coded Python script for detecting new, modified, or deleted file
 
 ---
 
+
 ## 👨‍💻 Developed By
+
 
 - **Name**: D.J. Ganesh  
 - **Intern ID**: CITSOD227  
@@ -15,13 +17,17 @@ A robust, color-coded Python script for detecting new, modified, or deleted file
 
 ---
 
+
 ## 📌 About the Project
+
 
 This script scans a specified directory and uses cryptographic hashing (**SHA-512**) to detect any changes in the files. It’s helpful for validating the integrity of critical data and monitoring unauthorized changes in sensitive systems.
 
 ---
 
+
 ## 🔍 Features
+
 
 
 - ✅ Detects **New**, **Modified**, and **Deleted** files recursively
@@ -41,8 +47,10 @@ This script scans a specified directory and uses cryptographic hashing (**SHA-51
 - Install dependencies with:
   ```bash
   pip install colorama
+
   
 🛠️ Setup
+
 
 
 Clone the repo
@@ -63,6 +71,7 @@ EMAIL_PASSWORD = "your_generated_app_password"
 EMAIL_TO = "receiver@example.com"
 
 📌 Gmail Users: Create an App Password here:
+
 https://myaccount.google.com/apppasswords
 
 (Optional) Customize the monitored directory
